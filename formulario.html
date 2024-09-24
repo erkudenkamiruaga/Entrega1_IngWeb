@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Formulario</title>
+</head>
+<body>
+    <h1>Sesiones a medida para ti</h1>
+    <p>
+       Rellena el siguiente formulario para ver qué tipo de sesión es más adecuada para tus necesidades.
+    </p>
+
+    <fieldset>
+        <legend>Tus datos básicos</legend>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellidos">  Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos"><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email"><br><br>
+
+        <label for="fecha_nac">Fecha de nacimiento</label>
+        <input type="date" name="fecha_nac" id="fecha_nac"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Sesiones</legend>
+        
+        <label for="tipo_sesion">¿Qué tipo de sesión te gustaría?</label> <!-- ESTO TENGO QUE REVISARLO -->
+        <input type="radio" name="tipo_sesion" id="tipo_sesion" value="individual" checked> Individual
+        <input type="radio" name="tipo_sesion" id="tipo_sesion" value="grupal"> Grupal<br><br>
+        
+        <label for="tema_sesion">Tema que te gustaría tratar</label> <br>
+        <select id="tema_sesion" name="tema_sesion">            
+            <option>Manejo del Estrés y la Ansiedad</option>
+            <option>Mejora de la Autoestima</option>
+            <option>Superación de Hábitos Negativos</option>
+            <option>Autodisciplina y Organización Personal</option>
+            <option>Autocuidado y Bienestar Personal</option>
+            <option selected>----</option>
+           </select> <br><br>
+           
+        ¿Cuál es tu disponibilidad?<br>
+        <label for="dia_sesion">Día de la semana</label>
+        <select id="dia_sesion" name="dia_sesion">            
+            <option>Lunes</option>
+            <option>Martes</option>
+            <option>Miércoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option selected>----</option>
+           </select> 
+
+        <label for="inicio_disponibilidad"></label>De
+        <input type="time" name="inicio_disponibilidad" id="inicio_disponibilidad">
+
+        <label for="fin_disponibilidad"></label> a 
+        <input type="time" name="fin_disponibilidad" id="fin_disponibilidad"><br><br>
+    
+
+        <!-- AQUI TENGO QUE CREAR UN LABEL???? -->
+        <textarea name="textarea" rows="10"
+        cols="50">¿Algo que te gustaría compratir con nosotrxs?</textarea><br><br>
+
+
+    </fieldset>
+
+    <label for="condiciones"></label>
+    <input type="checkbox" name="condiciones" id="condiciones">Quiero recibir información de nuevas sesiones<br><br>
+    <label for="enviar"></label>
+    <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+
+       
+
+</body>
+</html>
